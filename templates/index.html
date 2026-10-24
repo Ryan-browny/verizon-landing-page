@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="A Verizon-inspired landing page built with Python and Flask."
+  >
+  <title>Verizon | Landing Page Demo</title>
+
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}"
+  >
+
+  <script
+    src="{{ url_for('static', filename='js/main.js') }}"
+    defer
+  ></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="audience-links">
+        <a href="https://www.verizon.com/" class="selected">Personal</a>
+        <a href="https://www.verizon.com/business/">Business</a>
+      </div>
+
+      <a href="https://www.verizon.com/support/">Support</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container navigation">
+      <a href="/" class="logo" aria-label="Verizon demo home">
+        verizon<span>✓</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        Menu
+      </button>
+
+      <nav id="main-navigation" aria-label="Main navigation">
+        <a href="#mobile">Mobile</a>
+        <a href="#home-internet">Home</a>
+        <a href="#deals">Deals</a>
+        <a href="#why-verizon">Why Verizon</a>
+      </nav>
+
+      <a class="header-cta" href="#deals">Explore deals ↗</a>
+    </div>
+  </header>
+
+  <div class="announcement">
+    A world of possibilities. One powerful connection.
+    <a href="#mobile">Explore mobile →</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CONNECTED TO WHAT MATTERS.</p>
+
+          <h1 id="hero-title">
+            Your world.<br>
+            Your way.
+          </h1>
+
+          <p class="hero-description">
+            The phones you love. The connections you count on.
+            Discover more possibilities with Verizon.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-dark" href="#mobile">Shop phones</a>
+            <a class="text-link" href="#home-internet">
+              Explore home internet ↗
+            </a>
+          </div>
+
+          <p class="hero-note">
+            Independent practice project. Offers are illustrative.
+          </p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="phone phone-back">
+            <div class="camera-block">
+              <i></i><i></i><i></i>
+            </div>
+            <span class="back-mark">v</span>
+          </div>
+
+          <div class="phone phone-front">
+            <div class="phone-island"></div>
+            <div class="phone-screen">
+              <span>Make it</span>
+              <strong>yours.</strong>
+              <div class="screen-circle"></div>
+            </div>
+          </div>
+
+          <div class="connection-label">A little more possibility. ↗</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links container" aria-label="Explore services">
+      <a href="#mobile"><span>01</span> Shop phones ↗</a>
+      <a href="#home-internet"><span>02</span> Home internet ↗</a>
+      <a href="#deals"><span>03</span> Explore deals ↗</a>
+      <a href="#why-verizon"><span>04</span> Discover more ↗</a>
+    </section>
+
+    <section class="section container" id="mobile">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+          <h2>A connection for<br>every part of life.</h2>
+        </div>
+
+        <a class="text-link" href="https://www.verizon.com/smartphones/">
+          View phones on Verizon ↗
+        </a>
+      </div>
+
+      <div class="cards" id="deals">
+        <article class="card card-light">
+          <span class="pill">MOBILE</span>
+          <h3>New phone.<br>New possibilities.</h3>
+          <p>
+            Find a smartphone that fits your everyday.
+            Big ideas deserve a brilliant screen.
+          </p>
+
+          <div class="mini-phone" aria-hidden="true">
+            <div class="mini-island"></div>
+            <span>Hello.</span>
+          </div>
+
+          <a
+            class="button button-dark"
+            href="https://www.verizon.com/smartphones/"
+          >
+            Explore phones
+          </a>
+        </article>
+
+        <article class="card card-dark" id="home-internet">
+          <span class="pill">HOME INTERNET</span>
+          <h3>Home is where<br>you connect.</h3>
+          <p>
+            From movie nights to working from home,
+            discover internet for your everyday.
+          </p>
+
+          <div class="router-art" aria-hidden="true">
+            <div class="wifi-rings">)))</div>
+            <div class="router"><span>verizon</span><i></i></div>
+          </div>
+
+          <a
+            class="button button-white"
+            href="https://www.verizon.com/home/internet/"
+          >
+            Explore home internet
+          </a>
+        </article>
+
+        <article class="card card-yellow">
+          <span class="pill">BRING YOUR PHONE</span>
+          <h3>Your phone.<br>A fresh start.</h3>
+          <p>
+            Love the phone you have? Explore your options
+            for bringing it to Verizon.
+          </p>
+
+          <div class="switch-art" aria-hidden="true">↗</div>
+
+          <a
+            class="button button-dark"
+            href="https://www.verizon.com/bring-your-own-device/"
+          >
+            Find out more
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="benefits" id="why-verizon">
+      <div class="container benefits-grid">
+        <div>
+          <p class="eyebrow">MORE OF WHAT YOU LOVE</p>
+          <h2>Life moves.<br>Stay connected.</h2>
+        </div>
+
+        <div class="benefit-list">
+          <article>
+            <span>01 /</span>
+            <div>
+              <h3>On the go.</h3>
+              <p>Explore mobile options for wherever your day takes you.</p>
+            </div>
+          </article>
+
+          <article>
+            <span>02 /</span>
+            <div>
+              <h3>At home.</h3>
+              <p>Make room for streaming, sharing, and getting things done.</p>
+            </div>
+          </article>
+
+          <article>
+            <span>03 /</span>
+            <div>
+              <h3>On your terms.</h3>
+              <p>Discover phones and services that fit the way you live.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-cta container">
+      <h2>Your next connection<br>starts here.</h2>
+      <a class="button button-dark" href="#mobile">Explore your options ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <a href="/" class="logo">verizon<span>✓</span></a>
+
+        <nav aria-label="Footer navigation">
+          <a href="#mobile">Mobile</a>
+          <a href="#home-internet">Home internet</a>
+          <a href="https://www.verizon.com/support/">Verizon support ↗</a>
+        </nav>
+      </div>
+
+      <p class="disclaimer">
+        Educational landing page recreation. Not affiliated with Verizon.
+        Verizon is a trademark of its respective owner.
+        Product links open the official Verizon website.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
