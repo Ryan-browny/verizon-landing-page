@@ -1,0 +1,6 @@
+// This file prevents your virtual environment and local settings from being uploaded
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
