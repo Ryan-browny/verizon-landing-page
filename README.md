@@ -57,3 +57,7 @@ Open http://127.0.0.1:5000 in your browser.
 The development server is intended for local use.
 GitHub stores the source code; pushing this repository does not deploy
 the Flask application.
+
+## Project Demo
+
+[Watch the screen recording](demo/screen-recording.mp4)
